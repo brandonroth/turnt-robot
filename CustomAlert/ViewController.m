@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AlertViewController.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)showAlert:(id)sender
+{
+    AlertViewController *vc = [[AlertViewController alloc] initWithNibName:nil bundle:nil];
+    [vc show];
 }
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7CE1058407149B99876442E /* libPods-CustomAlert.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A3F443467A4A99A14B9F2B /* libPods-CustomAlert.a */; };
 		CABEFD6218E22E2F000A8B1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABEFD6118E22E2F000A8B1E /* Foundation.framework */; };
 		CABEFD6418E22E2F000A8B1E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABEFD6318E22E2F000A8B1E /* CoreGraphics.framework */; };
 		CABEFD6618E22E2F000A8B1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABEFD6518E22E2F000A8B1E /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 		CABEFD8318E22E2F000A8B1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CABEFD6518E22E2F000A8B1E /* UIKit.framework */; };
 		CABEFD8B18E22E2F000A8B1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CABEFD8918E22E2F000A8B1E /* InfoPlist.strings */; };
 		CABEFD8D18E22E2F000A8B1E /* CustomAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CABEFD8C18E22E2F000A8B1E /* CustomAlertTests.m */; };
+		CABEFD9B18E242BF000A8B1E /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CABEFD9A18E242BF000A8B1E /* AlertViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23A3F443467A4A99A14B9F2B /* libPods-CustomAlert.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomAlert.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C797DE249E6D4524991CE9E4 /* Pods-CustomAlert.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomAlert.xcconfig"; path = "Pods/Pods-CustomAlert.xcconfig"; sourceTree = "<group>"; };
 		CABEFD5E18E22E2F000A8B1E /* CustomAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABEFD6118E22E2F000A8B1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CABEFD6318E22E2F000A8B1E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +57,8 @@
 		CABEFD8818E22E2F000A8B1E /* CustomAlertTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomAlertTests-Info.plist"; sourceTree = "<group>"; };
 		CABEFD8A18E22E2F000A8B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CABEFD8C18E22E2F000A8B1E /* CustomAlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomAlertTests.m; sourceTree = "<group>"; };
+		CABEFD9918E242BF000A8B1E /* AlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		CABEFD9A18E242BF000A8B1E /* AlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 				CABEFD6418E22E2F000A8B1E /* CoreGraphics.framework in Frameworks */,
 				CABEFD6618E22E2F000A8B1E /* UIKit.framework in Frameworks */,
 				CABEFD6218E22E2F000A8B1E /* Foundation.framework in Frameworks */,
+				C7CE1058407149B99876442E /* libPods-CustomAlert.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +93,7 @@
 				CABEFD8618E22E2F000A8B1E /* CustomAlertTests */,
 				CABEFD6018E22E2F000A8B1E /* Frameworks */,
 				CABEFD5F18E22E2F000A8B1E /* Products */,
+				C797DE249E6D4524991CE9E4 /* Pods-CustomAlert.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +113,7 @@
 				CABEFD6318E22E2F000A8B1E /* CoreGraphics.framework */,
 				CABEFD6518E22E2F000A8B1E /* UIKit.framework */,
 				CABEFD8018E22E2F000A8B1E /* XCTest.framework */,
+				23A3F443467A4A99A14B9F2B /* libPods-CustomAlert.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -119,6 +128,8 @@
 				CABEFD7718E22E2F000A8B1E /* ViewController.m */,
 				CABEFD7918E22E2F000A8B1E /* Images.xcassets */,
 				CABEFD6818E22E2F000A8B1E /* Supporting Files */,
+				CABEFD9918E242BF000A8B1E /* AlertViewController.h */,
+				CABEFD9A18E242BF000A8B1E /* AlertViewController.m */,
 			);
 			path = CustomAlert;
 			sourceTree = "<group>";
@@ -159,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CABEFD9018E22E2F000A8B1E /* Build configuration list for PBXNativeTarget "CustomAlert" */;
 			buildPhases = (
+				07B3510941D44F9A9C60C024 /* Check Pods Manifest.lock */,
 				CABEFD5A18E22E2F000A8B1E /* Sources */,
 				CABEFD5B18E22E2F000A8B1E /* Frameworks */,
 				CABEFD5C18E22E2F000A8B1E /* Resources */,
+				ACC06689F1C145D9B5D67012 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,12 +257,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07B3510941D44F9A9C60C024 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ACC06689F1C145D9B5D67012 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-CustomAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CABEFD5A18E22E2F000A8B1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CABEFD7818E22E2F000A8B1E /* ViewController.m in Sources */,
+				CABEFD9B18E242BF000A8B1E /* AlertViewController.m in Sources */,
 				CABEFD7218E22E2F000A8B1E /* AppDelegate.m in Sources */,
 				CABEFD6E18E22E2F000A8B1E /* main.m in Sources */,
 			);
@@ -373,6 +420,7 @@
 		};
 		CABEFD9118E22E2F000A8B1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C797DE249E6D4524991CE9E4 /* Pods-CustomAlert.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -386,6 +434,7 @@
 		};
 		CABEFD9218E22E2F000A8B1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C797DE249E6D4524991CE9E4 /* Pods-CustomAlert.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -456,6 +505,7 @@
 				CABEFD9218E22E2F000A8B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CABEFD9318E22E2F000A8B1E /* Build configuration list for PBXNativeTarget "CustomAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +514,7 @@
 				CABEFD9518E22E2F000A8B1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
