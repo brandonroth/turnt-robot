@@ -28,16 +28,28 @@
         self.label.text = @"Sample Text";
         self.label.backgroundColor = [UIColor blueColor];
         [self.label sizeToFit];
-        self.label.center = self.view.center;
+        //self.label.center = self.view.center;
+        self.label.translatesAutoresizingMaskIntoConstraints = NO;
 
         [self.view addSubview:self.label];
+
+        self.view.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return self;
 }
 
-- (void)viewDidLayoutSubviews
+//- (void)viewDidLayoutSubviews
+//{
+//    self.label.center = self.view.center;
+//}
+
+- (void)updateViewConstraints
 {
-    self.label.center = self.view.center;
+
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.label attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+
+    [super updateViewConstraints];
 }
 
 - (void)viewDidLoad
